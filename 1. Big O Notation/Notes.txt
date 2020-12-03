@@ -1,0 +1,24 @@
+Big O Notation (in order of best to worst)
+  - Constant: O(1)
+  - Log: O(log n)
+  - Linear: O(n)
+  - N Log: O(nlog n)
+  - Quadratic: O(n^2)
+  - Exponential: O(c^n)
+  - Factorial: O(n!)
+
+Space Complexity in JS
+  - Most primitives (booleans, numbers, undefined, nulls) are constant Space
+  - Strings require O(n) space (where n is the string length)
+  - Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for objects)
+
+Log Complexity
+  - Efficient sorting algos involves log
+  - Recursion sometimes involves log space complexity
+
+Recap
+  - To analyze the performance of an algorithm, we use Big O Notation
+  - Big O Notation can give us a high level understanding of the time/space complexity of an algorithm
+  - Big O Notation doesn't care about precision, only about general trends (linear, quadratic, constant?)
+  - The time/space complexity (as measured by Big O) depends only on the algorithm, not the hardware used to run the algorithm
+  - Big O Notation is everywhere!
