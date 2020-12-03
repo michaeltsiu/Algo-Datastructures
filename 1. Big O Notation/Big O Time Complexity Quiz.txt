@@ -63,5 +63,3 @@
       return subtotalArray;
   }
   - O(n^2)
-
-
