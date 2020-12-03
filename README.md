@@ -6,8 +6,7 @@ The link to the Udemy course is [here](https://www.udemy.com/course/js-algorithm
 ## Topics
 - Big-O Notation
 - Analyzing Performance of Arrays and Objects
-- Problem Solving Approach
-- Problem Solving Patterns
+- Problem Solving Approach/Patterns
 - Recursion
 - Searching Algorithms
 - Bubble, Selection, Insertion, Merge, Quick & Radix Sort
