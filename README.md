@@ -10,6 +10,7 @@ The link to the Udemy course is [here](https://www.udemy.com/course/js-algorithm
 - Recursion
 - Searching Algorithms
 - Bubble, Selection, Insertion, Merge, Quick & Radix Sort
+- Data Structure
 - Singly & Doubly Linked Lists
 - Stacks + Queues
 - Binary Search Trees
