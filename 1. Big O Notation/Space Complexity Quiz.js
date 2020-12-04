@@ -1,20 +1,20 @@
-1. Determine the space complexity for the following function
+// 1. Determine the space complexity for the following function
   function logUpTo(n) {
       for (var i = 1; i <= n; i++) {
           console.log(i);
       }
   }
-  - O(1)
+  // - O(1)
 
-2. Determine the space complexity for the following function
+// 2. Determine the space complexity for the following function
   function logAtMost10(n) {
     for (var i = 1; i <= Math.min(n, 10); i++) {
         console.log(i);
     }
   }
-  - O(1)
+  // - O(1)
 
-3. Determine the  space complexity for the following function
+// 3. Determine the  space complexity for the following function
   function onlyElementsAtEvenIndex(array) {
       var newArray = Array(Math.ceil(array.length / 2));
       for (var i = 0; i < array.length; i++) {
@@ -24,9 +24,9 @@
       }
       return newArray;
   }
-  - O(n)
+  // - O(n)
 
-4. Determine the space complexity for the following function
+// 4. Determine the space complexity for the following function
   function subtotals(array) {
       var subtotalArray = Array(array.length);
       for (var i = 0; i < array.length; i++) {
@@ -38,4 +38,4 @@
       }
       return subtotalArray;
   }
-  - O(n)
+  // - O(n)

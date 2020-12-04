@@ -1,43 +1,43 @@
-1. Simplify the big O expression as much as possible - O(n + 10)
-  - O(n)
+// 1. Simplify the big O expression as much as possible - O(n + 10)
+//   - O(n)
 
-2. Simplify the big O expression as much as possible - O(100 * n)
-  - O(n)
+// 2. Simplify the big O expression as much as possible - O(100 * n)
+//   - O(n)
 
-3. Simply the following big O expression as much as possible - O(25)
-  - O(1)
+// 3. Simply the following big O expression as much as possible - O(25)
+//   - O(1)
 
-4. Simply the following big O expression as much as possible -  O(n^2 + n^3)
-  - O(n^3)
+// 4. Simply the following big O expression as much as possible -  O(n^2 + n^3)
+//   - O(n^3)
 
-5. Simply the following big O expression as much as possible - O(n + n + n + n)
-  - O(n)
+// 5. Simply the following big O expression as much as possible - O(n + n + n + n)
+//   - O(n)
 
-6. Determine the time complexity for the following function
+// 6. Determine the time complexity for the following function
   function logUpTo(n) {
       for (var i = 1; i <= n; i++) {
           console.log(i);
       }
   }
-  - O(n)
+  // - O(n)
 
-7. Determine the time complexity for the following function
+// 7. Determine the time complexity for the following function
   function logAtMost10(n) {
       for (var i = 1; i <= Math.min(n, 10); i++) {
           console.log(i);
       }
   }
-  - O(1)
+  // - O(1)
 
-8. Determine the time complexity for the following function
+// 8. Determine the time complexity for the following function
   function logAtLeast10(n) {
       for (var i = 1; i <= Math.max(n, 10); i++) {
           console.log(i);
       }
   }
-  - O(n)
+  // - O(n)
 
-9. Determine the time complexity for the following function
+// 9. Determine the time complexity for the following function
   function onlyElementsAtEvenIndex(array) {
       var newArray = Array(Math.ceil(array.length / 2));
       for (var i = 0; i < array.length; i++) {
@@ -47,10 +47,9 @@
       }
       return newArray;
   }
-  - O(n)
+  // - O(n)
 
-10. Determine the time complexity for the following function
-
+// 10. Determine the time complexity for the following function
   function subtotals(array) {
       var subtotalArray = Array(array.length);
       for (var i = 0; i < array.length; i++) {
@@ -62,4 +61,4 @@
       }
       return subtotalArray;
   }
-  - O(n^2)
+  // - O(n^2)
