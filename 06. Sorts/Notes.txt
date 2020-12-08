@@ -29,3 +29,16 @@ Javascript sorting
         return str1.length - str2.length // smallest to longest
         return str2.length - str1.length // longest to smallest
       }
+
+Bubble vs Selection vs insertion
+TC: Time Complexity
+Algorithm   TC(Best)  TC(Avg)  TC(Worst)  Space C
+Bubble        O(n)     O(n^2)    O(n^2)    O(1)
+insertion     O(n)     O(n^2)    O(n^2)    O(1)
+Selection     O(n^2)   O(n^2)    O(n^2)    O(1)
+
+Why use Merge/Quick/Radix sort?
+  - Faster sorts
+    - There is a family of sorting algorithms that can improve time complexity from O(n^2) to O(n log n)
+    - Theres a tradeoff between efficency and simplicity
+    - The more efficient algorithms are much less simple, and generally take longer to understand
