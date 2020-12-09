@@ -1,0 +1,41 @@
+
+Objectives
+  - Define what recursion is and how it can be used
+  - Understand the two essential components of a recursive function
+  - Visualize the call stack to better debug and understand recursive functions
+  - Use helper method recursion and pure recursion to solve more difficult problems
+
+What is recursion?
+  - A process (a function in our case) that calls itself
+
+Its everywhere
+  - JSON.parse/JSON.stringify
+  - document.getElementById and DOM traversal algorithms
+  - Object traversal
+  - We will see it with more complex data structures
+  - Sometimes cleaner alternative to iterations
+
+The call stack
+  - It's a stack data structures
+  - Any time a function is invoked, it is placed(pushed) on top of the call stack
+  - When JS sees the return keyword or when the function ends, the compiler will remove(pop)
+
+How recursive functions work
+  - Invoke the same function with a different input until you reach your base case
+  Base case: the condition when the recursion ends (or else stack overflow)
+
+Ex. function countDown(num) {
+  if (num <= 0) {
+    console.log("All done!");
+    return;
+  }
+  console.log(num);
+  num--;
+  countDown(num);
+}
+
+Quiz
+  1. What tool does Javascript use to manage function Invocations?
+    - The call stack
+  2. What is a base case?
+    - A situation when the recursion ends
