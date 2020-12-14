@@ -67,47 +67,43 @@ class BinarySearchTree {
     return false;
   }
   BFS() {
-    let data = [],
-        queue = [this.root];
-    while(queue.length) {
-      const node = queue.shift();
-      data.push(node.value);
+    let data = [], queue = [this.root];
+    while (queue.length) {
+      let node = queue.shift();
+      data.push(node.val);
       if (node.left) queue.push(node.left);
       if (node.right) queue.push(node.right);
     }
     return data;
   }
   DFSPreOrder() { // preOrder
-    let data = [],
-        queue = [this.root];
-    while (queue.length) {
-      const node = queue.shift();
-      data.unshift(node.value);
-      if (node.left) queue.unshift(node.left);
-      if (node.right) queue.unshift(node.right);
+    let data = [];
+    let traverse = (node) => {
+      data.push(node.val);
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
     }
+    traverse(this.root);
     return data;
   }
   DFSPostOrder() { //postOder
-    let data = [],
-        queue = [this.root];
-    while (queue.length) {
-      const node = queue.shift();
-      if (node.left) queue.unshift(node.left);
-      if (node.right) queue.unshift(node.right);
-      data.unshift(node.value);
+    let data = [];
+    let traverse = (node) => {
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+      data.push(node.val);
     }
+    traverse(this.root);
     return data;
   }
   DFSInOrder() { // inOrder
-    let data = [],
-    queue = [this.root];
-    while (queue.length) {
-      const node = queue.shift();
-      if (node.left) queue.unshift(node.left);
-      data.unshift(node.value);
-      if (node.right) queue.unshift(node.right);
+    let data = [];
+    let traverse = (node) => {
+      if (node.left) traverse(node.left);
+      data.push(node.val);
+      if (node.right) traverse(node.right);
     }
+    traverse(this.root);
     return data;
   }
 }

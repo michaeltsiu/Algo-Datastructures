@@ -35,60 +35,33 @@ class BinarySearchTree {
     return data;
   }
   DFSPreOrder() { // preOrder
-    // let data = [];
-    // function traverse(node) {
-    //   data.push(node.value)
-    //   if (node.left) traverse(node.left);
-    //   if (node.right) traverse(node.right);
-    // }
-    // traverse(this.root);
-    // return data;
-    let data = [],
-        queue = [this.root];
-    while (queue.length) {
-      const node = queue.shift();
-      data.unshift(node.value);
-      if (node.left) queue.unshift(node.left);
-      if (node.right) queue.unshift(node.right);
+    let data = [];
+    function traverse(node) {
+      data.push(node.value)
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
     }
+    traverse(this.root);
     return data;
   }
   DFSPostOrder() { //postOder
-    // let data = [];
-    // function traverse(node) {
-    //   if (node.left) traverse(node.left);
-    //   if (node.right) traverse(node.right);
-    //   data.push(node.value)
-    // }
-    // traverse(this.root);
-    // return data;
-    let data = [],
-        queue = [this.root];
-    while (queue.length) {
-      const node = queue.shift();
-      if (node.left) queue.unshift(node.left);
-      if (node.right) queue.unshift(node.right);
-      data.unshift(node.value);
+    let data = [];
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+      data.push(node.value)
     }
+    traverse(this.root);
     return data;
   }
   DFSInOrder() { // inOrder
-    // let data = [];
-    // function traverse(node) {
-    //   if (node.left) traverse(node.left);
-    //   data.push(node.value);
-    //   if (node.right) traverse(node.right);
-    // }
-    // traverse(this.root);
-    // return data;
-    let data = [],
-    queue = [this.root];
-    while (queue.length) {
-      const node = queue.shift();
-      if (node.left) queue.unshift(node.left);
-      data.unshift(node.value);
-      if (node.right) queue.unshift(node.right);
+    let data = [];
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+      data.push(node.value);
+      if (node.right) traverse(node.right);
     }
+    traverse(this.root);
     return data;
   }
 }
